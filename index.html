@@ -1,14 +1,380 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HighTech Segurança Residencial - Proteção e Automação para sua Casa</title>
-    <script type="module" crossorigin src="/assets/index-DG-oKLTz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B5d03-nz.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighTech Rio Preto - Soluções em Tecnologia para sua Casa e Negócio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .promo-badge {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-2xl">
+        <!-- Top Bar -->
+        <div class="bg-gray-900 py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-4">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-1 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        (17) 98200-9990
+                    </span>
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-1 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        contato@hightechrp.com.br
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-yellow-400">⭐ Atendimento 24h</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header -->
+        <div class="py-4">
+            <div class="container mx-auto px-4">
+                <!-- Logo Centralizado -->
+                <div class="text-center mb-4">
+                    <a href="index.html" class="inline-block">
+                        <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-400 via-green-400 to-blue-400 bg-clip-text text-transparent">
+                            HighTech Rio Preto
+                        </h1>
+                        <p class="text-sm text-gray-300 mt-1">Soluções em Tecnologia para sua Casa e Negócio</p>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="flex justify-center">
+                    <ul class="flex flex-wrap justify-center space-x-6 text-sm">
+                        <li><a href="index.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Início</a></li>
+                        <li><a href="automacao-residencial.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Automação</a></li>
+                        <li><a href="cameras-seguranca.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Câmeras</a></li>
+                        <li><a href="som-ambiente.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Som Ambiente</a></li>
+                        <li><a href="servicos-eletricos.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Elétricos</a></li>
+                        <li><a href="cameras-wifi.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Wi-Fi</a></li>
+                        <li><a href="controle-acesso.html" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Acesso</a></li>
+                        <li><a href="index.html#sobre" class="hover:text-green-400 transition duration-300 py-2 px-3 rounded-lg hover:bg-gray-700">Sobre</a></li>
+                        <li><a href="https://wa.me/5517982009990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HighTech%20Rio%20Preto." target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full flex items-center transition duration-300 transform hover:scale-105">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.690z"/></svg>
+                            WhatsApp
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Promo Banner -->
+    <div class="bg-red-500 text-white text-center py-2 promo-badge">
+        <span class="font-bold">🔥 Promoção Limitada - Instale Hoje!</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Transforme sua Casa em um Ambiente Inteligente</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Automação residencial, som ambiente, internet Wi-Fi, serviços elétricos e muito mais. Tecnologia de ponta para seu conforto, praticidade e bem-estar!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5517982009990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20HighTech%20Rio%20Preto." target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg inline-flex items-center justify-center transition duration-300">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                    FALE CONOSCO AGORA
+                </a>
+                <a href="#servicos" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg inline-flex items-center justify-center transition duration-300">
+                    Ver Tecnologias
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Instalação Rápida</h3>
+                    <p class="text-gray-600">Tecnologia instalada no mesmo dia</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Suporte Técnico 24h</h3>
+                    <p class="text-gray-600">Assistência especializada sempre</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Garantia Total</h3>
+                    <p class="text-gray-600">Produtos e tecnologias garantidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">Nossas Tecnologias</h2>
+            <p class="text-xl text-gray-600 mb-12 text-center">Soluções completas em tecnologia residencial e comercial para transformar seu ambiente</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                    <div class="text-blue-500 text-5xl mb-4">🏠</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Automação Residencial</h3>
+                    <p class="text-gray-600 mb-4">Controle inteligente de iluminação, climatização, cortinas e muito mais.</p>
+                    <a href="automacao-residencial.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">SAIBA MAIS</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                    <div class="text-blue-500 text-5xl mb-4">🔊</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Som Ambiente</h3>
+                    <p class="text-gray-600 mb-4">Sistemas de áudio multiroom para criar a atmosfera perfeita.</p>
+                    <a href="som-ambiente.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">SAIBA MAIS</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                    <div class="text-blue-500 text-5xl mb-4">📶</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Internet Wi-Fi</h3>
+                    <p class="text-gray-600 mb-4">Rede Wi-Fi robusta e cobertura total para sua casa ou empresa.</p>
+                    <a href="cameras-wifi.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">SAIBA MAIS</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                    <div class="text-blue-500 text-5xl mb-4">⚡</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Serviços Elétricos</h3>
+                    <p class="text-gray-600 mb-4">Instalações elétricas modernas e seguras para sua tecnologia.</p>
+                    <a href="servicos-eletricos.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">SAIBA MAIS</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                    <div class="text-blue-500 text-5xl mb-4">🔑</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Controle de Acesso</h3>
+                    <p class="text-gray-600 mb-4">Sistemas inteligentes de controle e gestão de acesso.</p>
+                    <a href="controle-acesso.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">SAIBA MAIS</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                    <div class="text-blue-500 text-5xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Monitoramento</h3>
+                    <p class="text-gray-600 mb-4">Câmeras e sistemas de monitoramento para sua tranquilidade.</p>
+                    <a href="cameras-seguranca.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA -->
+    <section class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">💡 TRANSFORME SEU AMBIENTE HOJE!</h2>
+            <a href="https://wa.me/5517982009990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20tecnologias%20da%20HighTech%20Rio%20Preto!" target="_blank" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg inline-flex items-center transition duration-300 hover:bg-gray-100">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                FALE COM NOSSOS ESPECIALISTAS
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Por que escolher a HighTech Rio Preto?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Experiência Comprovada</h3>
+                    <p class="text-gray-600">Anos de experiência no mercado de segurança residencial, com centenas de clientes satisfeitos.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Tecnologia Avançada</h3>
+                    <p class="text-gray-600">Utilizamos apenas equipamentos de última geração para garantir máxima eficiência e durabilidade.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Preços Competitivos</h3>
+                    <p class="text-gray-600">Oferecemos os melhores preços do mercado sem comprometer a qualidade dos nossos serviços.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Suporte Completo</h3>
+                    <p class="text-gray-600">Atendimento 24h, manutenção preventiva e suporte técnico especializado sempre que precisar.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://wa.me/5517982009990?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20HighTech%20Rio%20Preto." target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg inline-flex items-center transition duration-300">
+                    INSTALE HOJE MESMO!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">O que nossos clientes dizem</h2>
+            <p class="text-xl text-gray-600 mb-12 text-center">Depoimentos reais de quem confia na HighTech Rio Preto</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">M</div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Maria Silva</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Excelente serviço! Instalaram as câmeras rapidamente e o suporte é fantástico."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">J</div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">João Santos</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Recomendo! Profissionais competentes e preço justo. Minha casa está muito mais segura."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">A</div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Ana Costa</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Atendimento impecável desde o primeiro contato. Superou minhas expectativas!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Não espere mais! Modernize seu ambiente hoje!</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Entre em contato agora e receba um projeto personalizado de tecnologia residencial. Instalação rápida e garantia total!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5517982009990?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20personalizado." target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg inline-flex items-center justify-center transition duration-300">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                    CHAME NO WHATSAPP
+                </a>
+                <a href="tel:+5517982009990" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg inline-flex items-center justify-center transition duration-300">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    LIGAR AGORA
+                </a>
+            </div>
+            <p class="text-lg mt-6">📞 (17) 98200-9990</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+        <!-- Main Footer -->
+        <div class="py-12">
+            <div class="container mx-auto px-4">
+                <!-- Logo e Descrição Centralizados -->
+                <div class="text-center mb-8">
+                    <h3 class="text-4xl font-bold bg-gradient-to-r from-blue-400 via-green-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                        HighTech Rio Preto
+                    </h3>
+                    <p class="text-xl text-gray-300 mb-4">Soluções em Tecnologia para sua Casa e Negócio</p>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Transformamos ambientes com tecnologia de ponta: automação residencial, som ambiente, internet Wi-Fi e muito mais. 
+                        Sua casa inteligente começa aqui!
+                    </p>
+                </div>
+                
+                <!-- Contatos -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.690z"/></svg>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">WhatsApp</h4>
+                        <a href="https://wa.me/5517982009990" target="_blank" class="text-green-400 hover:text-green-300 transition duration-300">(17) 98200-9990</a>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Telefone</h4>
+                        <a href="tel:+5517982009990" class="text-blue-400 hover:text-blue-300 transition duration-300">(17) 98200-9990</a>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Email</h4>
+                        <a href="mailto:contato@hightechrp.com.br" class="text-purple-400 hover:text-purple-300 transition duration-300">contato@hightechrp.com.br</a>
+                    </div>
+                </div>
+                
+                <!-- Navegação Rápida -->
+                <div class="text-center mb-8">
+                    <h4 class="font-semibold text-lg mb-4">Nossas Tecnologias</h4>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="automacao-residencial.html" class="text-gray-400 hover:text-green-400 transition duration-300">Automação</a>
+                        <a href="som-ambiente.html" class="text-gray-400 hover:text-green-400 transition duration-300">Som Ambiente</a>
+                        <a href="cameras-wifi.html" class="text-gray-400 hover:text-green-400 transition duration-300">Internet Wi-Fi</a>
+                        <a href="servicos-eletricos.html" class="text-gray-400 hover:text-green-400 transition duration-300">Serviços Elétricos</a>
+                        <a href="controle-acesso.html" class="text-gray-400 hover:text-green-400 transition duration-300">Controle de Acesso</a>
+                        <a href="cameras-seguranca.html" class="text-gray-400 hover:text-green-400 transition duration-300">Monitoramento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="bg-gray-900 py-4 border-t border-gray-700">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 HighTech Rio Preto. Todos os direitos reservados. | 
+                    <span class="text-green-400">Tecnologia que transforma ambientes</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
+
